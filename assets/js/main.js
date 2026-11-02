@@ -175,6 +175,25 @@
     select(0);
   });
 
+  /* ---------- Copy to clipboard (Discord username) ---------- */
+  document.querySelectorAll("[data-copy]").forEach(function (btn) {
+    var label = btn.querySelector("[data-copy-label]");
+    var original = label ? label.textContent : "";
+    btn.addEventListener("click", function () {
+      var text = btn.getAttribute("data-copy");
+      var done = function () {
+        if (label) { label.textContent = "Copied! Add densuu on Discord"; setTimeout(function () { label.textContent = original; }, 2200); }
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(done, done);
+      } else {
+        var ta = document.createElement("textarea"); ta.value = text; document.body.appendChild(ta); ta.select();
+        try { document.execCommand("copy"); } catch (e) {}
+        document.body.removeChild(ta); done();
+      }
+    });
+  });
+
   /* ---------- Footer year ---------- */
   document.querySelectorAll("[data-year]").forEach(function (el) { el.textContent = new Date().getFullYear(); });
 })();

@@ -4,8 +4,6 @@ Static site for GitHub Pages. No build step, no frameworks: just HTML, CSS and J
 
 ```
 index.html                     Home (hero, about, work, expertise, services, process, contact)
-projects/inazuma-strikers.html Inazuma Strikers case study
-projects/hunters-law.html      Hunter's Law case study
 assets/css/style.css           All styling (colors at the top under :root)
 assets/js/main.js              Stars, nav, scroll reveal, video autoplay, lightbox, tabs
 assets/videos/                 Compressed demo clips (mp4)
@@ -17,22 +15,13 @@ assets/img/                    Video posters + favicon
 1. Create a GitHub account if you don't have one.
 2. Create a new **public** repository named exactly `YOURUSERNAME.github.io`.
 3. In the repo, click **Add file → Upload files** and drag in everything from this folder
-   (`index.html`, `projects/`, `assets/`, `README.md`). Commit.
+   (`index.html`, `assets/`, `README.md`). Commit.
 4. Go to **Settings → Pages**. Under "Build and deployment", set Source to
    **Deploy from a branch**, branch **main**, folder **/ (root)**. Save.
 5. After a minute or two the site is live at `https://YOURUSERNAME.github.io`.
 
 To change something later, open the file on GitHub, click the pencil icon, edit, and commit.
 The site updates automatically.
-
-## Things to fill in
-
-Search the HTML for `EDIT` comments and for `class="ph"` / `class="ph-item"`.
-Those are placeholders and show as dim dashed text on the site until you replace them.
-
-- **Contact links** (index.html, Contact section): Discord and Roblox `href="#"` + the usernames.
-- **Project pages**: overview, responsibilities, systems, technical contributions.
-  When you replace a placeholder list item, also remove `class="ph-item"` from the `<li>`.
 
 ## Adding a video
 
@@ -44,8 +33,6 @@ Copy any tile block, e.g.:
   <div class="tile-cap"><div><span>Category</span><h4>Clip title</h4></div></div>
 </a>
 ```
-
-On project pages, paths start with `../assets/...` instead of `assets/...`.
 
 **YouTube instead of mp4:** add `data-youtube="VIDEO_ID"` to the `<a>` (the part after `watch?v=`).
 The tile still uses the `<video>`/poster as its preview; clicking opens the YouTube player.

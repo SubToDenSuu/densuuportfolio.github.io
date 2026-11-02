@@ -431,6 +431,7 @@ section { padding: clamp(80px, 12vw, 140px) 0; position: relative; }
   transition: border-color .3s, background .3s, transform .3s var(--ease);
 }
 .c-link:hover { border-color: var(--line-2); background: rgba(19,23,34,.7); transform: translateX(4px); }
+button.c-link { width: 100%; text-align: left; font: inherit; color: inherit; }
 .c-link .l { display: flex; align-items: center; gap: 14px; }
 .c-link .ico { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; background: var(--surface-2); border: 1px solid var(--line); }
 .c-link .ico svg { width: 18px; height: 18px; }
@@ -519,3 +520,4 @@ li.ph-item::before { border-style: dashed !important; border-color: var(--dim) !
 }
 
 @media (max-width: 480px) { .hide-sm { display: none; } }
+.mini-stats:last-child { border-bottom: 0; padding-bottom: 0; }

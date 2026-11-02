@@ -38,7 +38,6 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <!-- EDIT: availability text -->
           <span class="status reveal"><span class="dot"></span>Available for commissions<span class="hide-sm"> &amp; long-term work</span></span>
 
           <h1 class="reveal d1">Building Complex<br /><span class="soft">Roblox Experiences.</span></h1>
@@ -51,7 +50,6 @@
             <a href="#contact" class="btn btn-ghost">Contact Me</a>
           </div>
 
-          <!-- EDIT: headline statistics -->
           <div class="stats reveal d4">
             <div class="stat"><div class="val">6+</div><div class="lbl">Years of experience</div></div>
             <div class="stat"><div class="val">20M+</div><div class="lbl">Game visits<small>Inazuma Strikers</small></div></div>
@@ -77,7 +75,6 @@
           <p class="about-lead" style="margin-top:24px">I design and build the systems that make Roblox games work, from first sketch to live servers.</p>
         </div>
         <div class="about-body reveal d1">
-          <!-- EDIT: about text -->
           <p>I'm <strong>DenSuu</strong>, a Roblox Game Developer and Full-Stack Engineer with <strong>6+ years</strong> on the platform. I specialize in complex technical systems: gameplay architecture, combat, AI, backend and data, and the optimization that keeps it all running smoothly at scale.</p>
           <p>I've led development on large projects, including head developer on <strong>Inazuma Strikers</strong> (20M+ visits), and I'm used to working inside development teams as well as owning entire systems end to end.</p>
           <p>What I bring to a team is technical problem-solving: I take a hard requirement, architect a clean solution, and see it through to something stable, secure and maintainable.</p>
@@ -101,26 +98,23 @@
         <div class="projects">
           <!-- PROJECT A -->
           <article class="project-card reveal">
-            <a class="project-media" href="projects/inazuma-strikers.html" aria-label="Inazuma Strikers case study">
-              <!-- EDIT: swap for real Inazuma Strikers gameplay footage/cover when available -->
+            <a class="project-media" href="assets/videos/cinematic-2.mp4" data-lightbox data-title="Ability cinematic" data-meta="Inazuma Strikers" aria-label="Play Inazuma Strikers clip">
               <video data-autoplay muted loop playsinline preload="none" poster="assets/img/cinematic-2.jpg" data-src="assets/videos/cinematic-2.mp4"></video>
             </a>
             <div class="project-body">
               <div class="project-meta"><span class="tag accent">Head Developer</span><span class="tag live">Released</span></div>
               <h3>Inazuma Strikers</h3>
-              <p>Head developer on Inazuma Strikers, a Roblox experience with 20M+ visits and a 24K+ member Discord.<em class="ph">Add a one-line summary of the game.</em></p>
+              <p>Head developer on Inazuma Strikers, a Roblox experience with 20M+ visits and a 24K+ member Discord community.</p>
               <div class="mini-stats">
                 <div><div class="val">20M+</div><div class="lbl">Visits</div></div>
                 <div><div class="val">24K+</div><div class="lbl">Discord members</div></div>
               </div>
-              <a href="projects/inazuma-strikers.html" class="btn btn-ghost btn-sm">View case study
-                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
             </div>
           </article>
 
           <!-- PROJECT B -->
           <article class="project-card reveal">
-            <a class="project-media" href="projects/hunters-law.html" aria-label="Hunter's Law case study">
+            <a class="project-media" href="assets/videos/ai-monster-fight.mp4" data-lightbox data-title="Monster AI combat" data-meta="Hunter's Law" aria-label="Play Hunter's Law clip">
               <video data-autoplay muted loop playsinline preload="none" poster="assets/img/ai-monster-fight.jpg" data-src="assets/videos/ai-monster-fight.mp4"></video>
             </a>
             <div class="project-body">
@@ -131,8 +125,6 @@
                 <div><div class="val">100K+</div><div class="lbl">YouTube views</div></div>
                 <div><div class="val">100%</div><div class="lbl">Scripted by me</div></div>
               </div>
-              <a href="projects/hunters-law.html" class="btn btn-ghost btn-sm">View case study
-                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
             </div>
           </article>
         </div>
@@ -372,7 +364,6 @@ Remote.OnServerEvent:<span class="f">Connect</span>(<span class="k">function</sp
           <!-- E -->
           <article class="svc-card reveal d1">
             <div class="svc-visual">
-              <!-- EDIT: replace with a video of one of your plugins when you have one -->
               <div class="code-visual" aria-hidden="true">
                 <div class="bar"><i></i><i></i><i></i><b>Plugin.server.luau</b></div>
 <pre><span class="k">local</span> bar = plugin:<span class="f">CreateToolbar</span>(<span class="s">"Studio Tools"</span>)
@@ -438,7 +429,7 @@ btn.Click:<span class="f">Connect</span>(<span class="k">function</span>()
           <div class="step reveal d2"><span class="track"></span><h4>Development</h4><p>Implementation with regular progress updates and previews.</p></div>
           <div class="step reveal d3"><span class="track"></span><h4>Testing</h4><p>Edge cases, multiplayer behavior and exploit paths get tested and fixed.</p></div>
           <div class="step reveal d4"><span class="track"></span><h4>Optimization</h4><p>Profiling and refinement so it runs well on every device.</p></div>
-          <div class="step reveal d4"><span class="track"></span><h4>Delivery &amp; support</h4><p>Clean handoff, documentation and support after delivery.</p></div>
+          <div class="step reveal d4"><span class="track"></span><h4>Delivery &amp; support</h4><p>Clean handoff and support after delivery.</p></div>
         </div>
       </div>
     </section>
@@ -457,16 +448,15 @@ btn.Click:<span class="f">Connect</span>(<span class="k">function</span>()
             </div>
 
             <div class="contact-links">
-              <!-- EDIT: put your Discord invite or profile link in href, and your username in the .s line -->
-              <a class="c-link" href="#" target="_blank" rel="noopener">
+              <!-- Discord: clicking copies the username -->
+              <button class="c-link" type="button" data-copy="densuu" aria-label="Copy Discord username densuu">
                 <span class="l"><span class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.6 5.3A16.9 16.9 0 0 0 15.4 4l-.5 1a15.7 15.7 0 0 0-5.8 0l-.5-1a16.9 16.9 0 0 0-4.2 1.3C1.7 9.3 1 13.2 1.3 17a17 17 0 0 0 5.2 2.6l1.1-1.8a11 11 0 0 1-1.7-.8l.4-.3a12.1 12.1 0 0 0 11.4 0l.4.3c-.5.3-1.1.6-1.7.8l1.1 1.8a17 17 0 0 0 5.2-2.6c.4-4.4-.7-8.3-3.1-11.7ZM8.7 14.7c-1 0-1.9-1-1.9-2.1s.8-2.1 1.9-2.1 1.9 1 1.9 2.1-.8 2.1-1.9 2.1Zm6.6 0c-1 0-1.9-1-1.9-2.1s.8-2.1 1.9-2.1 1.9 1 1.9 2.1-.8 2.1-1.9 2.1Z"/></svg></span>
-                  <span><span class="t">Discord</span><br /><span class="s ph">your_discord_username</span></span></span>
+                  <span><span class="t">Discord</span><br /><span class="s" data-copy-label>densuu · click to copy</span></span></span>
                 <svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12L12 4M6 4h6v6"/></svg>
-              </a>
-              <!-- EDIT: Roblox profile link -->
-              <a class="c-link" href="#" target="_blank" rel="noopener">
+              </button>
+              <a class="c-link" href="https://www.roblox.com/users/377263855/profile" target="_blank" rel="noopener">
                 <span class="l"><span class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.2 2 2 17.8 17.8 22 22 6.2 6.2 2Zm7.7 12.6-4.5-1.2 1.2-4.5 4.5 1.2-1.2 4.5Z"/></svg></span>
-                  <span><span class="t">Roblox</span><br /><span class="s ph">roblox.com/users/…</span></span></span>
+                  <span><span class="t">Roblox</span><br /><span class="s">View profile</span></span></span>
                 <svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12L12 4M6 4h6v6"/></svg>
               </a>
               <a class="c-link" href="https://www.youtube.com/@SubToDenSuu" target="_blank" rel="noopener">
